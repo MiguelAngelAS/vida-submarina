@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Protección de la Vida Marina</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background-color: #00796b;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #00695c;
+            display: flex;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            display: block;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: #004d40;
+        }
+
+        /* Fondo desenfocado detrás del contenido */
+        .contenido-con-fondo {
+            position: relative;
+            z-index: 0;
+            overflow: hidden;
+        }
+
+        .contenido-con-fondo::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('oceano.jpg');
+            /* Coloca tu imagen aquí */
+            background-size: cover;
+            background-position: center;
+            filter: blur(12px);
+            /* Desenfoque */
+            z-index: -1;
+            transform: scale(1.1);
+        }
+
+        section {
+            padding: 60px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .contenedor-transparente {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 30px;
+            border-radius: 12px;
+            color: white;
+            text-shadow: 1px 1px 3px black;
+        }
+
+        h2 {
+            margin-top: 0;
+            color: #ffffff;
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        footer {
+            background-color: #004d40;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Protección de la Vida Marina</h1>
+        <p>Cuidemos nuestros océanos para el futuro del planeta</p>
+    </header>
+
+    <nav>
+        <a href="ecosistemas.html">Ecosistemas</a>
+        <a href="especies.html">Especies en peligro</a>
+        <a href="acciones.html">Acciones de protección</a>
+        <a href="practica.html">Practica</a>
+    </nav>
+
+    <!-- 🔽 Contenido principal con fondo desenfocado -->
+    <div class="contenido-con-fondo">
+
+        <section id="ecosistemas">
+            <div class="contenedor-transparente">
+                <h2>Ecosistemas Marinos</h2>
+                <p>Los ecosistemas marinos como arrecifes de coral, manglares y mar abierto son el hogar de miles de
+                    especies. Su equilibrio es vital para la vida en la Tierra.</p>
+                <img src="ecosistema.jpg" alt="Ecosistema marino">
+            </div>
+        </section>
+
+        <section id="especies">
+            <div class="contenedor-transparente">
+                <h2>Especies en Peligro</h2>
+                <p>Muchas especies marinas están amenazadas por la contaminación, la pesca excesiva y el cambio
+                    climático. Entre ellas, tortugas marinas, tiburones y corales.</p>
+                <img src="especies.jpg" alt="Especies marinas en peligro">
+            </div>
+        </section>
+
+        <section id="acciones">
+            <div class="contenedor-transparente">
+                <h2>¿Qué Podemos Hacer?</h2>
+                <p>Reducir el uso de plásticos, apoyar leyes de conservación, y participar en limpiezas de playas son
+                    algunas formas de ayudar. Cada acción cuenta.</p>
+                <img src="acciones.jpg" alt="Acciones para proteger el mar">
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>© 2025 Protección de la Vida Marina. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+
+</html>
