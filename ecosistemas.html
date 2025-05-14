@@ -17,12 +17,61 @@
             color: white;
             padding: 40px 20px;
             text-align: center;
+            border-radius: 10px;
         }
 
         a {
             color: #00796b;
             text-decoration: none;
             font-weight: bold;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: scale(1.03);
+        }
+
+        .card h3 {
+            background-color: #b2dfdb;
+            margin: 0;
+            padding: 10px;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        .image-placeholder {
+            height: 130px;
+            background-color: #e0f2f1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .card p {
+            padding: 15px;
+            font-size: 14px;
+            text-align: justify;
         }
     </style>
 </head>
@@ -38,6 +87,33 @@
 
     <a href="index.html">← Volver al inicio</a>
 
+    <div class="card-container">
+        <div class="card">
+            <h3>Océanos y Mares</h3>
+            <div class="image-placeholder">[Imagen de océano]</div>
+            <p>Amplios cuerpos de agua salada con gran biodiversidad. Se dividen en zonas según la profundidad e influyen en el clima global.</p>
+        </div>
+
+        <div class="card">
+            <h3>Arrecifes de Coral</h3>
+            <div class="image-placeholder">[Imagen de arrecife]</div>
+            <p>Formaciones marinas con alta biodiversidad. Están compuestos por corales y son sensibles al aumento de temperatura y contaminación.</p>
+        </div>
+
+        <div class="card">
+            <h3>Manglares</h3>
+            <div class="image-placeholder">[Imagen de manglar]</div>
+            <p>Árboles adaptados al agua salobre que se encuentran en zonas costeras. Protegen a muchas especies y a las costas de la erosión.</p>
+        </div>
+
+        <div class="card">
+            <h3>Estuarios</h3>
+            <div class="image-placeholder">[Imagen de estuario]</div>
+            <p>Regiones donde el río se encuentra con el mar. Altamente productivos y con especies adaptadas a variaciones de salinidad.</p>
+        </div>
+    </div>
+
 </body>
 
 </html>
+
