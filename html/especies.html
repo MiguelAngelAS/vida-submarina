@@ -25,6 +25,39 @@
             text-decoration: none;
             font-weight: bold;
         }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            justify-items: center;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            width: 535px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+
+        .card img {
+            width: 100%;
+            object-fit: cover;
+            background-color: #e0f2f1;
+        }
+
+        .card p {
+            padding: 15px;
+            font-size: 14px;
+            text-align: justify;
+        }
     </style>
 </head>
 
@@ -34,10 +67,70 @@
         <h1>Especies en Peligro</h1>
     </header>
 
-    <p>Las especies marinas, como las tortugas y tiburones, enfrentan serias amenazas debido a la sobreexplotación y la
-        contaminación.</p>
+    <p>existe un amplio grupo de especies marinas que se encuentran en peligro de extinción y por las cuales debemos
+        priorizar su cuidado. Algunos ejemplos son:</p>
 
     <a href="../index.html">← Volver al inicio</a>
+
+    <div class="card-container">
+        <div class="card">
+            <img src="../imagenes/especies/foca.jpg" alt="Tortuga marina">
+            <p><strong>Foca Monje Hawaiana:</strong> La foca monje hawaiana (Neomonachus schauinslandi) habita las
+                costas del
+                estado norteamericano Hawai y según los datos más recientes publicados por IUCN en el año 2014, el
+                número de individuos maduros ronda los 632, siendo su estado de conservación decreciente y constante.
+
+                El mamífero vive en la marina nerítica de las Islas de Hawai (zonas poco profundas) y sus principales
+                amenazas son la pesca, la introducción de enfermedades invasoras a su hábitat, la aparición del humano
+                en su hábitat natural a raíz del turismo y la contaminación por efluentes industriales y militares. </p>
+        </div>
+        <div class="card">
+            <img src="../imagenes/especies/caballo.jpg" alt="Tiburón">
+            <p><strong>Caballo de Mar Blanco:</strong> IUCN evaluó en 2016 que el hipocampo blanco (Hippocampus whitei)
+                se encuentra en peligro de extinción a causa de la invasión de la actividad humana en sus hogares
+                naturales, el turismo y el agua doméstica contaminada y los desechos agrícolas o forestales que se
+                arrojan al mar. Con una esperanza de vida de 2 años por generación de especie, el caballito de mar
+                blanco reside en las costas de Nueva Gales del Sur, Australia; y es una especie protegida por ley en el
+                país insular.
+
+                El animal suele utilizar de hogar las macroalgas, corales y esponjas marinas que yacen a tan solo 12
+                metros de profundidad y se alimenta de crustáceos pequeños. Cuenta IUCN en su artículo que el
+                Hippocampus whitei es una especie de animal ovovivíparo. Los machos crían a las crías en una bolsa antes
+                de dar a luz. Suelen reproducirse entre los meses de octubre y abril de cada año. </p>
+        </div>
+        <div class="card">
+            <img src="../imagenes/especies/ballena.jpg" alt="Coral">
+            <p><strong>Ballena Azul:</strong> Aquae explica que el tercer animal de la lista es el cetáceo más grande
+                que
+                existe y se ubica entre los animales más voluminosos que han existido en la Tierra. La ballena azul
+                (Balaenoptera musculus) es un mamífero del orden Cetartiodactyla que puede alcanzar los 30 metros de
+                largo y pesar un total de 150 toneladas (150 000 kilogramos). A pesar de su majestuoso tamaño y de
+                comprender un área de hábitat que abarca todos los océanos del mundo, se encuentra en peligro de
+                extinción según la IUCN; aunque con una tendencia creciente de la población según los últimos datos
+                registrados en 2018.
+
+                El número de individuos maduros estimado ronda entre los 5000 a 15 000 ejemplares y su esperanza de vida
+                actual ronda los 30.8 años. Son animales que se alimentan exclusivamente de krill (Euphausiacea) y su
+                principal fuente de amenaza se debe a la caza furtiva y alteraciones ambientales en su hábitat natural.
+                Dice la IUCN que se han visto ballenas azules, en una zona de parto cercana a Sri Lanka en Asia,
+                colisionar con barcos y sufrir lesiones y traumatismos. </p>
+        </div>
+        <div class="card">
+            <img src="../imagenes/especies/raya.jpg" alt="Vaquita marina">
+            <p><strong>Raya del Diablo:</strong> Evaluada como en situación de peligro desde noviembre de 2018, la raya
+                del diablo, mantarraya diablo o manta mobular (Mobula mobular) es un animal condrictio (esqueleto
+                cartilaginoso) nativo del océano pacífico, atlántico, índico y mediterráneo. Con una población
+                decreciente, IUCN argumenta que no existen estimaciones actuales de la abundancia global de su especie.
+
+                Son animales que viven por al menos 12.8 años y pasan su vida residiendo a unos 50 metros de profundidad
+                bajo el agua. Cuenta la Lista Roja que “La especie exhibe movimientos a gran escala, hasta 1800
+                kilómetros de distancia a velocidades mínimas de 63 kilómetros diarios, probablemente impulsados ​​por
+                patrones estacionales en la disponibilidad de presas”. Su principal amenaza es la pesca involuntaria, es
+                decir que el objetivo es pescar otras especies mediante redes de arrastre y arpones, y de ese modo se
+                enredan entre ellas debido a la actividad humana que se interpone en su hábitat.
+            </p>
+        </div>
+    </div>
 
 </body>
 
